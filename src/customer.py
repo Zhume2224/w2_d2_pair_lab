@@ -6,15 +6,17 @@ class Customer:
         self.age = input_age
         self.energy = 0
 
+    # def add_caffeine_level(self,drink):
+        
+    #     self.energy += drink
+    #     return self.energy
+
     def add_caffeine_level(self,drink):
         
-        self.energy += drink
+        self.energy += drink.caffeine_level
         return self.energy
 
-
-    # def can_buy_drink(self,drink_of_choice):
-
-    #     if self.customer.wallet>=drink_of_choice.price:
-    #         return True
-
+    def reduce_energy(self,food):
+        self.energy-=food.rejuvenation_level
+        
     
